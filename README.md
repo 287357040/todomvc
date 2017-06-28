@@ -6,7 +6,7 @@
 
 浏览器文档加载完成后，引入app.js 开始自执行函数，先看看 app.js内容：
  
-首先我们看到了使用的全局对象jQuery, Handlebars, Router，这里Handlebars, director(Router函数对象)两个库没有用到过，顺手查了下：Handlebars是前端的模板引擎，之前用过Juicer，功能也是类似；director是一个额路由框架，这个在angularjs和vue中都有类似的使用，不做过多描述。
+首先看到了使用的全局对象jQuery, Handlebars, Router，这里Handlebars, director(Router函数对象)两个库没有用到过，顺手查了下：Handlebars是前端的模板引擎，之前用过Juicer，功能也是类似；director是一个额路由框架，这个在angularjs和vue中都有类似的使用，不做过多描述。
         
 整个文件封装了两个对象util, App; util没有什么好讲的，主要提供了两个工具方法uuid(生成todo的唯一标识符），store 提供了 localStrorage的读写api, 这边值得一提是的这个接口的设计，通过对arguments的个数判断来区分了读和写的逻辑，巧妙的实现了方法的重载。App：主要有以下几个函数initi、bindEvents和render。
         
