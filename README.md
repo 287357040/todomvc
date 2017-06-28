@@ -2,7 +2,7 @@
 
 针对不同的框架的实现，谈谈理解个人理解
 
-# jQuery库
+## jQuery库
 
  浏览器文档加载完成后，引入app.js 开始自执行函数，先看看 app.js内容：
         首先我们看到了使用的全局对象jQuery, Handlebars, Router，这里Handlebars, director(Router函数对象)两个库没有用到过，顺手查了下：Handlebars是前端的模板引擎，之前用过Juicer，功能也是类似；director是一个额路由框架，这个在angularjs和vue中都有类似的使用，不做过多描述。
